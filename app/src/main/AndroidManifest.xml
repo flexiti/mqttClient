@@ -43,13 +43,29 @@
         </receiver>
 
 
-        <service android:name="MQTTService" android:enabled="true"></service>
+        <service android:name="MQTTService" android:enabled="true">
+
+        </service>
         <activity
-            android:name=".ImageActivity"
+            android:name=".MyTextActivity"
+            android:theme="@style/custumStyleDialog"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+            android:name=".MyPicActivity"
             android:launchMode="singleTask"
             android:taskAffinity=""
             android:excludeFromRecents="true">
     </activity>
+        <activity
+            android:name=".MyListActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:excludeFromRecents="true">
+        </activity>
 
           </application>
 
